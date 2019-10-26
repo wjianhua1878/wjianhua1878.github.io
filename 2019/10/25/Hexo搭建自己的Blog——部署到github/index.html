@@ -58,8 +58,13 @@
 <meta property="og:site_name" content="Blog">
 <meta property="og:description" content="前言 上一篇文章我们已经把环境搭建好，并且可以在本地上预览。但这仅仅意味着只能在本地查看，那么如何部署到github上让其他的小伙伴也能查看呢？本文说一说如何将Blog部署到github上。如果没有搭建好本地的环境，可以查看我的上一篇文章。">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:updated_time" content="2019-10-25T13:11:19.773Z">
+<meta property="og:image" content="http:&#x2F;&#x2F;yoursite.com&#x2F;images&#x2F;02&#x2F;github1.png">
+<meta property="og:image" content="http:&#x2F;&#x2F;yoursite.com&#x2F;images&#x2F;02&#x2F;2.png">
+<meta property="og:image" content="http:&#x2F;&#x2F;yoursite.com&#x2F;images&#x2F;02&#x2F;4.png">
+<meta property="og:image" content="http:&#x2F;&#x2F;yoursite.com&#x2F;images&#x2F;02&#x2F;5.png">
+<meta property="og:updated_time" content="2019-10-26T02:27:49.133Z">
 <meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="http:&#x2F;&#x2F;yoursite.com&#x2F;images&#x2F;02&#x2F;github1.png">
 
 <link rel="canonical" href="http://yoursite.com/2019/10/25/Hexo%E6%90%AD%E5%BB%BA%E8%87%AA%E5%B7%B1%E7%9A%84Blog%E2%80%94%E2%80%94%E9%83%A8%E7%BD%B2%E5%88%B0github/">
 
@@ -210,10 +215,16 @@
                 <i class="fa fa-calendar-o"></i>
               </span>
               <span class="post-meta-item-text">发表于</span>
-              
 
-              <time title="创建时间：2019-10-25 19:39:13 / 修改时间：21:11:19" itemprop="dateCreated datePublished" datetime="2019-10-25T19:39:13+08:00">2019-10-25</time>
+              <time title="创建时间：2019-10-25 19:39:13" itemprop="dateCreated datePublished" datetime="2019-10-25T19:39:13+08:00">2019-10-25</time>
             </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-calendar-check-o"></i>
+                </span>
+                <span class="post-meta-item-text">更新于</span>
+                <time title="修改时间：2019-10-26 10:27:49" itemprop="dateModified" datetime="2019-10-26T10:27:49+08:00">2019-10-26</time>
+              </span>
             <span class="post-meta-item">
               <span class="post-meta-item-icon">
                 <i class="fa fa-folder-o"></i>
@@ -232,7 +243,7 @@
                 <i class="fa fa-file-word-o"></i>
               </span>
                 <span class="post-meta-item-text">本文字数：</span>
-              <span>119</span>
+              <span>536</span>
             </span>
             <span class="post-meta-item" title="阅读时长">
               <span class="post-meta-item-icon">
@@ -252,8 +263,25 @@
 
       
         <h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><blockquote>
-<p>上一篇文章我们已经把环境搭建好，并且可以在本地上预览。但这仅仅意味着只能在本地查看，那么如何部署到github上让其他的小伙伴也能查看呢？本文说一说如何将Blog部署到github上。如果没有搭建好本地的环境，可以<a href="/2019/10/24/GitHub%20+%20Hexo%E6%90%AD%E5%BB%BA%E8%87%AA%E5%B7%B1%E7%9A%84Blog%E2%80%94%E2%80%94%E6%9C%AC%E5%9C%B0%E7%8E%AF%E5%A2%83%E9%85%8D%E7%BD%AE/" title="查看我的上一篇文章">查看我的上一篇文章</a>。</p>
+<p>上一篇文章我们已经把环境搭建好，并且可以在本地上预览。但这仅仅意味着只能在本地查看，那么如何部署到github上让其他的小伙伴也能查看呢？本文说一说如何将Blog部署到github上。如果没有搭建好本地的环境，可以<a href="/2019/10/24/GitHub%20+%20Hexo%E6%90%AD%E5%BB%BA%E8%87%AA%E5%B7%B1%E7%9A%84Blog%E2%80%94%E2%80%94%E6%9C%AC%E5%9C%B0%E7%8E%AF%E5%A2%83%E9%85%8D%E7%BD%AE/" title="查看我的上一篇文章">查看我的上一篇文章</a>。  </p>
+</blockquote><a id="more"></a>
+<h2 id="步骤"><a href="#步骤" class="headerlink" title="步骤"></a>步骤</h2><h3 id="在github上创建一个仓库"><a href="#在github上创建一个仓库" class="headerlink" title="在github上创建一个仓库"></a>在github上创建一个仓库</h3><p>仓库名为<code>你的用户名.github.io</code>，如图:<img src="/images/02/github1.png" alt></p>
+<h3 id="配置Hexo"><a href="#配置Hexo" class="headerlink" title="配置Hexo"></a>配置Hexo</h3><ol>
+<li>在你创建的Blog文件夹下找到<code>_config.yml</code>文件进行配置:<img src="/images/02/2.png" alt></li>
+<li>用编辑器打开该文件，找到<code>deploy</code>，添加如下配置:<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">deploy:</span><br><span class="line">  <span class="built_in">type</span>: git</span><br><span class="line">  repo: git@github.com:wjianhua1878/wjianhua1878.github.io.git</span><br><span class="line">  baranch: master</span><br></pre></td></tr></table></figure>
+<img src="/images/02/4.png" alt>  </li>
+</ol>
+<h3 id="部署到github"><a href="#部署到github" class="headerlink" title="部署到github"></a>部署到github</h3><ol>
+<li>打开Blog文件夹然后打开终端，输入<code>npm i hexo-deployer-git -S</code>安装插件。</li>
+<li>安装完成后输入<code>hexo g</code></li>
+<li>输入<code>hexo d</code>完成部署</li>
+<li>进入github，打开刚才创建的仓库，点击setting，往下拉到<code>GitHub Pages</code>,看到:<img src="/images/02/5.png" alt></li>
+<li>这时候在地址栏输入<code>你的用户名.github.io</code>就可以访问刚部署成功的Blog!  </li>
+</ol>
+<h2 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h2><blockquote>
+<p>我们已经可以访问部署成功的Blog，之后我们可以试着换一款符合自己风格的主题，然后开始写我们的第一篇博客。</p>
 </blockquote>
+
     </div>
 
     
@@ -316,7 +344,7 @@
 
       <!--noindex-->
       <div class="post-toc-wrap sidebar-panel">
-          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#前言"><span class="nav-number">1.</span> <span class="nav-text">前言</span></a></li></ol></div>
+          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#前言"><span class="nav-number">1.</span> <span class="nav-text">前言</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#步骤"><span class="nav-number">2.</span> <span class="nav-text">步骤</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#在github上创建一个仓库"><span class="nav-number">2.1.</span> <span class="nav-text">在github上创建一个仓库</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#配置Hexo"><span class="nav-number">2.2.</span> <span class="nav-text">配置Hexo</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#部署到github"><span class="nav-number">2.3.</span> <span class="nav-text">部署到github</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#总结"><span class="nav-number">3.</span> <span class="nav-text">总结</span></a></li></ol></div>
       </div>
       <!--/noindex-->
 
