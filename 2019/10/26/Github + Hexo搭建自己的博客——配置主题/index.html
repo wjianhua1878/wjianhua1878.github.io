@@ -61,7 +61,9 @@
 <meta property="og:image" content="http:&#x2F;&#x2F;yoursite.com&#x2F;images&#x2F;03&#x2F;1.png">
 <meta property="og:image" content="http:&#x2F;&#x2F;yoursite.com&#x2F;images&#x2F;03&#x2F;2.png">
 <meta property="og:image" content="http:&#x2F;&#x2F;yoursite.com&#x2F;images&#x2F;03&#x2F;3.png">
-<meta property="og:updated_time" content="2019-10-26T09:07:53.116Z">
+<meta property="og:image" content="http:&#x2F;&#x2F;yoursite.com&#x2F;images&#x2F;03&#x2F;4.png">
+<meta property="og:image" content="http:&#x2F;&#x2F;yoursite.com&#x2F;images&#x2F;03&#x2F;5.png">
+<meta property="og:updated_time" content="2019-10-29T06:15:11.931Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:image" content="http:&#x2F;&#x2F;yoursite.com&#x2F;images&#x2F;03&#x2F;1.png">
 
@@ -144,19 +146,19 @@
 <nav class="site-nav">
   
   <ul id="menu" class="menu">
-        <li class="menu-item menu-item-主页">
+        <li class="menu-item menu-item-home">
 
-    <a href="/" rel="section"><i class="fa fa-fw fa-home"></i>主页</a>
-
-  </li>
-        <li class="menu-item menu-item-标签">
-
-    <a href="/tags/" rel="section"><i class="fa fa-fw fa-tags"></i>标签</a>
+    <a href="/" rel="section"><i class="fa fa-fw fa-home"></i>首页</a>
 
   </li>
-        <li class="menu-item menu-item-分类">
+        <li class="menu-item menu-item-tags">
 
-    <a href="/categories/" rel="section"><i class="fa fa-fw fa-th"></i>分类</a>
+    <a href="/tags/" rel="section"><i class="fa fa-fw fa-tags"></i>标签<span class="badge">1</span></a>
+
+  </li>
+        <li class="menu-item menu-item-categories">
+
+    <a href="/categories/" rel="section"><i class="fa fa-fw fa-th"></i>分类<span class="badge">1</span></a>
 
   </li>
         <li class="menu-item menu-item-文章">
@@ -214,10 +216,16 @@
                 <i class="fa fa-calendar-o"></i>
               </span>
               <span class="post-meta-item-text">发表于</span>
-              
 
-              <time title="创建时间：2019-10-26 15:34:55 / 修改时间：17:07:53" itemprop="dateCreated datePublished" datetime="2019-10-26T15:34:55+08:00">2019-10-26</time>
+              <time title="创建时间：2019-10-26 15:34:55" itemprop="dateCreated datePublished" datetime="2019-10-26T15:34:55+08:00">2019-10-26</time>
             </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-calendar-check-o"></i>
+                </span>
+                <span class="post-meta-item-text">更新于</span>
+                <time title="修改时间：2019-10-29 14:15:11" itemprop="dateModified" datetime="2019-10-29T14:15:11+08:00">2019-10-29</time>
+              </span>
             <span class="post-meta-item">
               <span class="post-meta-item-icon">
                 <i class="fa fa-folder-o"></i>
@@ -235,7 +243,7 @@
               <span class="post-meta-item-icon">
                 <i class="fa fa-file-word-o"></i>
               </span>
-              <span>2.4k</span>
+              <span>4.4k</span>
             </span>
 
         </div>
@@ -251,14 +259,47 @@
 <p>前两篇文章我们已经把<a href="/2019/10/24/GitHub%20+%20Hexo%E6%90%AD%E5%BB%BA%E8%87%AA%E5%B7%B1%E7%9A%84Blog%E2%80%94%E2%80%94%E6%9C%AC%E5%9C%B0%E7%8E%AF%E5%A2%83%E9%85%8D%E7%BD%AE/" title="环境配置">环境配置</a>好并且已经<a href="/2019/10/25/Hexo%E6%90%AD%E5%BB%BA%E8%87%AA%E5%B7%B1%E7%9A%84Blog%E2%80%94%E2%80%94%E9%83%A8%E7%BD%B2%E5%88%B0github/" title="部署到github">部署到github</a>上，但是还没有内容。而且hexo默认的主题感觉并不是很好看。本文将说一说如何配置主题，如何创建博文，写好后又怎么发布!</p>
 </blockquote>
 <a id="more"></a>
-<h3 id="选择一个自己喜欢的主题"><a href="#选择一个自己喜欢的主题" class="headerlink" title="选择一个自己喜欢的主题"></a>选择一个自己喜欢的主题</h3><p><a href="https://hexo.io/themes/" target="_blank" rel="noopener"><strong>点我选择主题</strong></a> (能不能进去看缘分，当然你也可以在github上直接搜索)<br><img src="/images/03/1.png" alt=""></p>
+<h2 id="具体配置方法"><a href="#具体配置方法" class="headerlink" title="具体配置方法"></a>具体配置方法</h2><h3 id="选择一个自己喜欢的主题"><a href="#选择一个自己喜欢的主题" class="headerlink" title="选择一个自己喜欢的主题"></a>选择一个自己喜欢的主题</h3><p><a href="https://hexo.io/themes/" target="_blank" rel="noopener"><strong>点我选择主题</strong></a> (能不能进去看缘分，当然你也可以在github上直接搜索)<br><img src="/images/03/1.png" alt=""></p>
 <h3 id="更换主题"><a href="#更换主题" class="headerlink" title="更换主题"></a>更换主题</h3><p>本文主要介绍目前用得比较多的next主题的配置，其他主题的配置大同小异。</p>
 <ol>
 <li>下载主题: 进入Blog文件夹下的<code>theme</code>文件夹，然后打开终端，输入<code>git clone https://github.com/theme-next/hexo-theme-next</code>。</li>
 <li>应用主题:下载完成后，进入Blog文件夹下的<code>_config.yml</code>,修改<code>themes</code>的值为<code>hexo-theme-next</code>。<img src="/images/03/2.png" alt=""> <img src="/images/03/3.png" alt=""></li>
+<li>在Blog目录下打开终端:</li>
 </ol>
+<ul>
+<li>输入<code>hexo clean</code> 清理hexo缓存</li>
+<li>输入<code>hexo s</code>打开本地服务</li>
+<li>打开浏览器，在地址栏输入<code>http://localhost:4000</code>进行预览</li>
+</ul>
 <h3 id="主目录下-config-yml的配置"><a href="#主目录下-config-yml的配置" class="headerlink" title="主目录下_config.yml的配置"></a>主目录下<code>_config.yml</code>的配置</h3><p>大多数选项都有<strong>英文</strong>说明^_^</p>
 <figure class="highlight yml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br><span class="line">74</span><br><span class="line">75</span><br><span class="line">76</span><br><span class="line">77</span><br><span class="line">78</span><br><span class="line">79</span><br><span class="line">80</span><br><span class="line">81</span><br><span class="line">82</span><br><span class="line">83</span><br><span class="line">84</span><br><span class="line">85</span><br><span class="line">86</span><br><span class="line">87</span><br><span class="line">88</span><br><span class="line">89</span><br><span class="line">90</span><br><span class="line">91</span><br><span class="line">92</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># Hexo Configuration</span></span><br><span class="line"><span class="comment">## Docs: https://hexo.io/docs/configuration.html</span></span><br><span class="line"><span class="comment">## Source: https://github.com/hexojs/hexo/</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># Site</span></span><br><span class="line"><span class="attr">title:</span> <span class="string">Blog</span> <span class="comment">#网站标题</span></span><br><span class="line"><span class="attr">subtitle:</span>   <span class="comment">#网站副标题</span></span><br><span class="line"><span class="attr">description:</span> <span class="comment">#网站描述</span></span><br><span class="line"><span class="attr">author:</span> <span class="string">wujianhua</span> <span class="comment">#作者</span></span><br><span class="line"><span class="attr">language:</span> <span class="string">zh-CN</span> <span class="comment">#语言</span></span><br><span class="line"><span class="attr">timezone:</span> <span class="comment">#网站时区</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># URL</span></span><br><span class="line"><span class="attr">url:</span> <span class="attr">http://yoursite.com</span></span><br><span class="line"><span class="attr">root:</span> <span class="string">/</span></span><br><span class="line"><span class="attr">permalink:</span> <span class="string">:year/:month/:day/:title/</span></span><br><span class="line"><span class="attr">permalink_defaults:</span></span><br><span class="line"><span class="attr">pretty_urls:</span></span><br><span class="line"><span class="attr">  trailing_index:</span> <span class="literal">true</span> <span class="comment"># Set to false to remove trailing index.html from permalinks</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># Directory</span></span><br><span class="line"><span class="attr">source_dir:</span> <span class="string">source</span> <span class="comment">#资源文件夹，这个文件夹用来存放内容</span></span><br><span class="line"><span class="attr">public_dir:</span> <span class="string">public</span> <span class="comment">#公共文件夹，这个文件夹用于存放生成的站点文件。</span></span><br><span class="line"><span class="attr">tag_dir:</span> <span class="string">tags</span> <span class="comment"># 标签文件夹 </span></span><br><span class="line"><span class="attr">archive_dir:</span> <span class="string">archives</span> <span class="comment">#归档文件夹</span></span><br><span class="line"><span class="attr">category_dir:</span> <span class="string">categories</span> <span class="comment">#分类文件夹</span></span><br><span class="line"><span class="attr">code_dir:</span> <span class="string">downloads/code</span></span><br><span class="line"><span class="attr">i18n_dir:</span> <span class="string">:lang</span></span><br><span class="line"><span class="attr">skip_render:</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># Writing</span></span><br><span class="line"><span class="attr">new_post_name:</span> <span class="string">:title.md</span> <span class="comment"># File name of new posts</span></span><br><span class="line"><span class="attr">default_layout:</span> <span class="string">post</span></span><br><span class="line"><span class="attr">titlecase:</span> <span class="literal">false</span> <span class="comment"># Transform title into titlecase</span></span><br><span class="line"><span class="attr">external_link:</span></span><br><span class="line"><span class="attr">  enable:</span> <span class="literal">true</span> <span class="comment"># Open external links in new tab</span></span><br><span class="line"><span class="attr">  field:</span> <span class="string">site</span> <span class="comment"># Apply to the whole site</span></span><br><span class="line"><span class="attr">  exclude:</span></span><br><span class="line"><span class="attr">filename_case:</span> <span class="number">0</span></span><br><span class="line"><span class="attr">render_drafts:</span> <span class="literal">false</span></span><br><span class="line"><span class="attr">post_asset_folder:</span> <span class="literal">false</span></span><br><span class="line"><span class="attr">relative_link:</span> <span class="literal">false</span></span><br><span class="line"><span class="attr">future:</span> <span class="literal">true</span></span><br><span class="line"><span class="attr">highlight:</span></span><br><span class="line"><span class="attr">  enable:</span> <span class="literal">true</span></span><br><span class="line"><span class="attr">  line_number:</span> <span class="literal">true</span></span><br><span class="line"><span class="attr">  auto_detect:</span> <span class="literal">true</span></span><br><span class="line"><span class="attr">  tab_replace:</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># Home page setting</span></span><br><span class="line"><span class="comment"># path: Root path for your blogs index page. (default = '')</span></span><br><span class="line"><span class="comment"># per_page: Posts displayed per page. (0 = disable pagination)</span></span><br><span class="line"><span class="comment"># order_by: Posts order. (Order by date descending by default)</span></span><br><span class="line"><span class="attr">index_generator:</span></span><br><span class="line"><span class="attr">  path:</span> <span class="string">''</span></span><br><span class="line"><span class="attr">  per_page:</span> <span class="number">10</span></span><br><span class="line"><span class="attr">  order_by:</span> <span class="bullet">-date</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># Category &amp; Tag</span></span><br><span class="line"><span class="attr">default_category:</span> <span class="string">uncategorized</span></span><br><span class="line"><span class="attr">category_map:</span></span><br><span class="line"><span class="attr">tag_map:</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># Metadata elements</span></span><br><span class="line"><span class="comment">## https://developer.mozilla.org/en-US/docs/Web/HTML/Element/meta</span></span><br><span class="line"><span class="attr">meta_generator:</span> <span class="literal">true</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># Date / Time format</span></span><br><span class="line"><span class="comment">## Hexo uses Moment.js to parse and display date</span></span><br><span class="line"><span class="comment">## You can customize the date format as defined in</span></span><br><span class="line"><span class="comment">## http://momentjs.com/docs/#/displaying/format/</span></span><br><span class="line"><span class="attr">date_format:</span> <span class="string">YYYY-MM-DD</span></span><br><span class="line"><span class="attr">time_format:</span> <span class="attr">HH:mm:ss</span></span><br><span class="line"><span class="comment">## Use post's date for updated date unless set in front-matter</span></span><br><span class="line"><span class="attr">use_date_for_updated:</span> <span class="literal">false</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># Pagination</span></span><br><span class="line"><span class="comment">## Set per_page to 0 to disable pagination</span></span><br><span class="line"><span class="attr">per_page:</span> <span class="number">10</span></span><br><span class="line"><span class="attr">pagination_dir:</span> <span class="string">page</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># Extensions</span></span><br><span class="line"><span class="comment">## Plugins: https://hexo.io/plugins/</span></span><br><span class="line"><span class="comment">## Themes: https://hexo.io/themes/</span></span><br><span class="line"><span class="attr">theme:</span> <span class="string">hexo-theme-next</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># Deployment</span></span><br><span class="line"><span class="comment">## Docs: https://hexo.io/docs/deployment.html</span></span><br><span class="line"><span class="attr">deploy:</span></span><br><span class="line"><span class="attr">  type:</span> <span class="string">git</span></span><br><span class="line"><span class="attr">  repo:</span> <span class="string">git@github.com:wjianhua1878/wjianhua1878.github.io.git</span></span><br><span class="line"><span class="attr">  baranch:</span> <span class="string">master</span></span><br></pre></td></tr></table></figure>
+<h3 id="next主题配置"><a href="#next主题配置" class="headerlink" title="next主题配置"></a>next主题配置</h3><p>在Blog目录下打开themes文件夹下的hexo-theme-next目录也会看到一个<code>_config.yml</code>文件，这个是next主题的配置文件。</p>
+<blockquote>
+<p>在<code>_config.yml</code>文件中你可以根据自己的风格配置主题，下面举几个例子，更多的配置请仔细查看文件内的英文说明:</p>
+</blockquote>
+<figure class="highlight yml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br></pre></td><td class="code"><pre><span class="line"><span class="attr">favicon:</span>  <span class="comment">#这里配置站点的图标</span></span><br><span class="line"><span class="attr">  small:</span> <span class="string">/images/favicon.jpg</span></span><br><span class="line"><span class="attr">  medium:</span> <span class="string">/images/favicon.jpg</span></span><br><span class="line"><span class="attr">  apple_touch_icon:</span> <span class="string">/images/apple-touch-icon-next.png</span></span><br><span class="line"><span class="attr">  safari_pinned_tab:</span> <span class="string">/images/logo.svg</span></span><br><span class="line">  </span><br><span class="line"><span class="attr">footer:</span>   <span class="comment">#网站页脚设置</span></span><br><span class="line">    <span class="comment"># Specify the date when the site was setup. If not defined, current year will be used.</span></span><br><span class="line">    <span class="comment"># since: 2015</span></span><br><span class="line">  </span><br><span class="line">    <span class="comment"># Icon between year and copyright info.</span></span><br><span class="line"><span class="attr">    icon:</span></span><br><span class="line">      <span class="comment"># Icon name in Font Awesome. See: https://fontawesome.com/v4.7.0/icons/</span></span><br><span class="line">      <span class="comment"># `heart` is recommended with animation in red (#ff0000).</span></span><br><span class="line"><span class="attr">      name:</span> <span class="string">user</span></span><br><span class="line">      <span class="comment"># If you want to animate the icon, set it to true.</span></span><br><span class="line"><span class="attr">      animated:</span> <span class="literal">false</span></span><br><span class="line">      <span class="comment"># Change the color of icon, using Hex Code.</span></span><br><span class="line"><span class="attr">      color:</span> <span class="string">"#808080"</span></span><br><span class="line">  </span><br><span class="line">    <span class="comment"># If not defined, `author` from Hexo `_config.yml` will be used.</span></span><br><span class="line"><span class="attr">    copyright:</span> <span class="string">wujianhua</span></span><br><span class="line">	</span><br><span class="line"><span class="comment"># Schemes   #next主题布局方式设置</span></span><br><span class="line"><span class="comment">#scheme: Muse</span></span><br><span class="line"><span class="comment">#scheme: Mist</span></span><br><span class="line"><span class="comment">#scheme: Pisces</span></span><br><span class="line"><span class="attr">scheme:</span> <span class="string">Gemini</span></span><br><span class="line"></span><br><span class="line"><span class="attr">menu:</span>  <span class="comment">#菜单栏的配置</span></span><br><span class="line"><span class="attr">  home:</span> <span class="string">/</span> <span class="string">||</span> <span class="string">home</span></span><br><span class="line">  <span class="comment">#about: /about/ || user</span></span><br><span class="line"><span class="attr">  tags:</span> <span class="string">/tags/</span> <span class="string">||</span> <span class="string">tags</span></span><br><span class="line"><span class="attr">  categories:</span> <span class="string">/categories/</span> <span class="string">||</span> <span class="string">th</span></span><br><span class="line"><span class="attr">  archives:</span> <span class="string">/archives/</span> <span class="string">||</span> <span class="string">archive</span></span><br><span class="line">  <span class="comment"># schedule: /schedule/ || calendar</span></span><br><span class="line">  <span class="comment"># sitemap: /sitemap.xml || sitemap</span></span><br><span class="line">  <span class="comment"># commonweal: /404/ || heartbeat</span></span><br><span class="line"></span><br><span class="line"><span class="attr">social:</span>  <span class="comment">#社交链接配置</span></span><br><span class="line"><span class="attr">  GitHub:</span> <span class="attr">https://github.com/wjianhua1878</span> <span class="string">||</span> <span class="string">github</span></span><br><span class="line"><span class="attr">  E-Mail:</span> <span class="attr">mailto:943536232@qq.com</span> <span class="string">||</span> <span class="string">envelope</span></span><br><span class="line">  </span><br><span class="line"> <span class="comment"># Blog rolls</span></span><br><span class="line"><span class="attr">links_settings:</span>  <span class="comment">#相关链接的配置</span></span><br><span class="line"><span class="attr">  icon:</span> <span class="string">link</span></span><br><span class="line"><span class="attr">  title:</span> <span class="string">快速链接</span></span><br><span class="line">  <span class="comment"># Available values: block | inline</span></span><br><span class="line"><span class="attr">  layout:</span> <span class="string">inline</span></span><br><span class="line"><span class="attr">links:</span></span><br><span class="line">  <span class="comment">#Title: http://example.com</span></span><br><span class="line"><span class="attr">  w3school:</span> <span class="attr">http://www.w3school.com.cn/</span></span><br><span class="line">  <span class="string">菜鸟教程:</span> <span class="attr">http://www.runoob.com/</span></span><br></pre></td></tr></table></figure>
+<h3 id="创建其他页面"><a href="#创建其他页面" class="headerlink" title="创建其他页面"></a>创建其他页面</h3><blockquote>
+<p>首页和归档页面时默认存在的，不需要我们配置，但是其他的标签页面等需要我们自己配置。</p>
+</blockquote>
+<ol>
+<li>在Blog目录下打开终端，输入<code>hexo new page categories</code>之后，我们会看到<code>source</code>文件夹下会有一个<code>categories</code>文件夹，打开文件夹下的<code>index.md</code>文件夹，会看到:<img src="/images/03/4.png" alt=""></li>
+<li>其他页面的创建和第一步一样。</li>
+</ol>
+<h3 id="新建一篇博文"><a href="#新建一篇博文" class="headerlink" title="新建一篇博文"></a>新建一篇博文</h3><ol>
+<li>在Blog目录下打开终端，输入<code>hexo new 文章标题</code>。</li>
+<li>打开<code>source</code>文件下的<code>_post</code>目录，会看到我们刚才创建的<code>.md</code>文件,然后用自己的编辑器编辑这个md文件就可以编写内容。其中文章可以设置分类和标签:<img src="/images/03/5.png" alt=""></li>
+</ol>
+<h3 id="提交到github"><a href="#提交到github" class="headerlink" title="提交到github"></a>提交到github</h3><ol>
+<li><code>hexo clean</code>清除hexo缓存</li>
+<li><code>hexo g</code>生成静态文件</li>
+<li><code>hexo s</code>在本地预览</li>
+<li>本地预览没问题后<code>hexo d</code>提交到github</li>
+<li>在浏览器输入<code>你的github用户名.github.io</code>查看(如果页面没有变化可以尝试<code>ctrl+f5</code>刷新或者等一小会再看)</li>
+</ol>
+<h2 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h2><blockquote>
+<p>到了这一步我们应该就已经搭建起了一个自己的Blog，想让Blog更加个性化，可看<a href="http://shenzekun.cn/hexo%E7%9A%84next%E4%B8%BB%E9%A2%98%E4%B8%AA%E6%80%A7%E5%8C%96%E9%85%8D%E7%BD%AE%E6%95%99%E7%A8%8B.html" target="_blank" rel="noopener">点击这里查看更多配置</a>。</p>
+</blockquote>
+
     </div>
 
     
@@ -321,7 +362,7 @@
 
       <!--noindex-->
       <div class="post-toc-wrap sidebar-panel">
-          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#前言"><span class="nav-text">前言</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#选择一个自己喜欢的主题"><span class="nav-text">选择一个自己喜欢的主题</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#更换主题"><span class="nav-text">更换主题</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#主目录下-config-yml的配置"><span class="nav-text">主目录下_config.yml的配置</span></a></li></ol></li></ol></div>
+          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#前言"><span class="nav-text">前言</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#具体配置方法"><span class="nav-text">具体配置方法</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#选择一个自己喜欢的主题"><span class="nav-text">选择一个自己喜欢的主题</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#更换主题"><span class="nav-text">更换主题</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#主目录下-config-yml的配置"><span class="nav-text">主目录下_config.yml的配置</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#next主题配置"><span class="nav-text">next主题配置</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#创建其他页面"><span class="nav-text">创建其他页面</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#新建一篇博文"><span class="nav-text">新建一篇博文</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#提交到github"><span class="nav-text">提交到github</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#总结"><span class="nav-text">总结</span></a></li></ol></div>
       </div>
       <!--/noindex-->
 
@@ -342,11 +383,13 @@
       </div>
       <div class="site-state-item site-state-categories">
             <a href="/categories/">
+          
         <span class="site-state-item-count">1</span>
         <span class="site-state-item-name">分类</span></a>
       </div>
       <div class="site-state-item site-state-tags">
             <a href="/tags/">
+          
         <span class="site-state-item-count">1</span>
         <span class="site-state-item-name">标签</span></a>
       </div>
@@ -407,13 +450,13 @@
       <i class="fa fa-area-chart"></i>
     </span>
       <span class="post-meta-item-text">站点总字数：</span>
-    <span title="站点总字数">4k</span>
+    <span title="站点总字数">6k</span>
     <span class="post-meta-divider">|</span>
     <span class="post-meta-item-icon">
       <i class="fa fa-coffee"></i>
     </span>
       <span class="post-meta-item-text">站点阅读时长 &asymp;</span>
-    <span title="站点阅读时长">15 分钟</span>
+    <span title="站点阅读时长">23 分钟</span>
 </div>
 
         
